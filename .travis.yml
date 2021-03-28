@@ -12,4 +12,5 @@ jobs:
 branches:
   only:
     - master
+    - main
     - /^v[0-9]+.*$/
