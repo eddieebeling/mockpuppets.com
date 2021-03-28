@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "15"
+install:
+  - npm install
+jobs:
+  include:
+    - stage: heroku release
+      deploy:
+        provider: heroku
+        api_key: $HEROKU_API_KEY
+branches:
+  only:
+    - master
+    - /^v[0-9]+.*$/
