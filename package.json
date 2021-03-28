@@ -1,0 +1,27 @@
+{
+  "name": "mockpuppets.com",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddieebeling/mockpuppets.com.git"
+  },
+  "scripts": {
+    "start": "cd api && npm start",
+    "postinstall": "cd app && npm i && npm run generate && cd .."
+  },
+  "engines": {
+    "node": ">=15"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddieebeling/mockpuppets.com/issues"
+  },
+  "homepage": "https://github.com/eddieebeling/mockpuppets.com#readme",
+  "workspaces": [
+    "api",
+    "app"
+  ]
+}
