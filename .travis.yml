@@ -10,6 +10,8 @@ jobs:
         provider: heroku
         api_key: $HEROKU_API_KEY
         app: mock-puppets
+        on:
+          branch: main
 branches:
   only:
     - master
